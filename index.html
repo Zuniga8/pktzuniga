@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Portifolio Gabriel Zuniga</title>
+
+  <link href='../css/style.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header id="start">
+    <nav>
+      <p class="logo">Gabriel Zuniga </p>
+      <a class="menu-toggle" id="menu-toggle" aria-label="Menu button" aria-expanded="false">
+        ☰
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="/page/aboutus.html">About us </a></li>
+        <li><a href="/page/services.html">Services </a></li>
+        <li><a href="/page/contact.html">Contact </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="breadcrumb" class="breadcrumb">
+      <ol>
+        <li><a href="/index.html">/ Home</a></li>
+      </ol>
+    </section>
+    <section id="home" class="home">
+      <h1>Hi, I'm Gabriel Zuniga</h1>
+      <p>
+        Web Implementation Analyst | Google Ads & Analytics Specialist</p>
+      <p>
+        I help businesses make better decisions through accurate tracking, GA4 implementation and performance data
+        strategy.
+      </p>
+      <a href="#contact" class="cta-button">Let's Talk</a>
+    </section>
+
+    <section id="aboutus" class="aboutus">
+      <h2>About us</h2>
+      <article class="profile">
+        <img src="img/myphoto.png" alt="myphoto" class="myphoto">
+        <p>
+          I'm a Web Analytics Specialist with over 4 years of experience working with LATAM and EMEA clients.
+          My focus is implementing accurate tracking systems using GA4, Google Tag Manager and Google Ads to drive
+          performance and measurable growth.
+        </p>
+      </article>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <article class="skill">
+        <img src="img/gtm.svg" alt="" class="imgskill">
+        <h3>Google Tag Manager (GTM): </h3>
+        <p>Advanced implementation of tracking tags and triggers across multiple platforms to ensure precise data
+          collection.
+        </p>
+      </article>
+
+      <article class="skill">
+        <img src="img/ga4.svg" alt="" class="imgskill">
+        <h3>Google Analytics (GA4): </h3>
+        <p>Specialized in event tracking, goal configuration, and e-commerce analysis to drive business insights.</p>
+      </article>
+
+      <article class="skill">
+        <img src="img/gads.svg" alt="" class="imgskill">
+        <h3>Google Ads:</h3>
+        <p>Expertise in conversion management, remarketing strategies, and technical troubleshooting in
+          LATAM and EMEA markets.</p>
+      </article>
+
+      <article class="skill">
+        <img src="img/html5.svg" alt="" class="imgskill">
+        <h3>Web Development:</h3>
+        <p>Proficient in HTML5, CSS, and JavaScript for technical implementations and web analysis.
+        </p>
+      </article>
+
+
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <article class="infocontact">
+        <address>
+          <div class="info">
+            <h4>Phone: </h4>
+            <p><a href="tel:+5511987654321"> +55 11 987654321</a></p>
+          </div>
+
+          <div class="info">
+            <h4>Email: </h4>
+            <p><a href="mailto:help@zuniga.com"> help@zuniga.com</a></p>
+          </div>
+
+          <div class="info">
+            <h4>Linkedin: </h4>
+            <p><a href="www.linkedin.com/in/gabriel-zuniga-734b17124"> linkedin.com/in/gabriel-zuniga</a>
+            </p>
+          </div>
+
+        </address>
+        <form action="" class="contact">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Name" id="name" class="name" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" placeholder="Phone Number" id="phone" class="phone" required />
+
+          <label for="email">Email</label>
+          <input type="email" placeholder="Email" id="email" class="email" required />
+
+          <label for="message">Message</label>
+          <textarea placeholder="Message" id="message" class="message" required></textarea>
+
+          <button type="submit">Send</button>
+
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Gabriel Zuniga | Web Analytics Specialist</p>
+  </footer>
+
+
+  <script>
+    document
+      .getElementById('menu-toggle')
+      .addEventListener('click', function () {
+        document.getElementById('nav-links').classList.toggle('active');
+        document.getElementById('menu-toggle').ariaExpanded = document.getElementById('menu-toggle').ariaExpanded == "true" ? "false" : "true";
+      });
+  </script>
+
+</body>
+
+</html>

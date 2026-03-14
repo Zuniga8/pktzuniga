@@ -1,0 +1,7 @@
+
+importante adicionar mais texto na parte de serviços, pois esta com pouca informação, 
+sera necessario adicionar para poder fazer uso do json referente ao pkt de javascript
+
+aplicar na pagina de serviços um menu de seleção (tipo produto)
+ aplciar json para as imagens do grid
+ aplicar na tela principal 

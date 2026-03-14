@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Portifolio Gabriel Zuniga</title>
+
+  <link href='../css/style.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header id="start">
+    <nav>
+      <p class="logo">Gabriel Zuniga </p>
+      <a class="menu-toggle" id="menu-toggle" aria-label="Menu button" aria-expanded="false">
+        ☰
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="aboutus.html">About us </a></li>
+        <li><a href="services.html">Services </a></li>
+        <li><a href="contact.html">Contact </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section id="breadcrumb" class="breadcrumb">
+      <ol>
+        <li><a href="../index.html">/ Home</a></li>
+        <li><a href="contact.html">/ Contact</a></li>
+      </ol>
+    </section>
+
+    <section id="contact" class="contact">
+
+      <h2>Contact Us</h2>
+      <article class="infocontact">
+        <address>
+          <div class="info">
+            <h4>Phone: </h4>
+            <p><a href="tel:+5511987654321"> +55 11 987654321</a></p>
+          </div>
+
+          <div class="info">
+            <h4>Email: </h4>
+            <p><a href="mailto:help@zuniga.com"> help@zuniga.com</a></p>
+          </div>
+
+          <div class="info">
+            <h4>Linkedin: </h4>
+            <p><a href="www.linkedin.com/in/gabriel-zuniga-734b17124"> linkedin.com/in/gabriel-zuniga</a>
+            </p>
+          </div>
+
+        </address>
+        <form action="" class="contact">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Name" id="name" class="name" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" placeholder="Phone Number" id="phone" class="phone" required />
+
+          <label for="email">Email</label>
+          <input type="email" placeholder="Email" id="email" class="email" required />
+
+          <label for="message">Message</label>
+          <textarea placeholder="Message" id="message" class="message" required></textarea>
+
+          <button type="submit">Send</button>
+
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Gabriel Zuniga | Web Analytics Specialist</p>
+  </footer>
+
+
+  <script>
+    document
+      .getElementById('menu-toggle')
+      .addEventListener('click', function () {
+        document.getElementById('nav-links').classList.toggle('active');
+        document.getElementById('menu-toggle').ariaExpanded = document.getElementById('menu-toggle').ariaExpanded == "true" ? "false" : "true";
+      });
+  </script>
+
+</body>
+
+</html>
